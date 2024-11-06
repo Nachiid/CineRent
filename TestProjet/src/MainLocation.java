@@ -14,7 +14,7 @@ public class MainLocation {
    * @param args inutiles ici.
    */
   public static void main(String[] args) {
-    System.out.println("\nAppuyez sur Entrée pour terminer le programme ...");
+    System.out.println("\nAppuyez suur Entrée pour terminer le programme ...");
     try {
       System.in.read();
     } catch (IOException e) {
