@@ -18,7 +18,7 @@ public class MainLocation {
     try {
       System.in.read();
     } catch (IOException e) {
-      System.err.println("Vous avez réussi à casser le clavier : " + e);
+      System.err.println("Vouuuuuus avez réussi à casser le clavier : " + e);
     }
     System.out.println("... terminé");
   }
