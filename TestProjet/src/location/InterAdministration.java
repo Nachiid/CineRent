@@ -46,7 +46,7 @@ public interface InterAdministration {
    * @return le film créé ou <code>null</code> en cas de problème (il existe
    *         déjà un film au même titre ou des paramètres n'étaient pas valides)
    */
-  Film creerFilm(String titre, Artiste realisateur, int annee, int ageLimite);
+  Film creerFilm(String titre, Artiste realisateur, int annee, int ageLimite); 
   
   /**
    * Ajoute des acteurs à un film.
