@@ -9,9 +9,12 @@ public class Film {
 	private Set<Artiste> acteurs;
 	private Set<Genre> genres;
 	private int ageMinimum;
+	private Set<Evaluation> evaluations;
+	private boolean isDisponible;
 	
 	
-	public Film(String titre, int annee, Artiste realisateur, Set<Artiste> acteurs, Set<Genre> genres, int ageMinimum) {
+	public Film(String titre, int annee, Artiste realisateur, Set<Artiste> acteurs, Set<Genre> genres, int ageMinimum,
+			Set<Evaluation> evaluations, boolean isDisponible) {
 		super();
 		this.titre = titre;
 		this.annee = annee;
@@ -19,7 +22,11 @@ public class Film {
 		this.acteurs = acteurs;
 		this.genres = genres;
 		this.ageMinimum = ageMinimum;
+		this.evaluations = evaluations;
+		this.isDisponible = isDisponible;
 	}
-    
+	
+	
+	
 	
 }
