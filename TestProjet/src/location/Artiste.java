@@ -5,43 +5,50 @@ package location;
 public class Artiste {
 	 private String nom;
 	 private String prenom;
-	 private String role; 
-	 
-	 public Artiste(String nom, String prenom, String role) {
-	        this.nom = nom;
-	        this.prenom = prenom;
-	        this.role = role;
-	    }
-
+	 private boolean estActeur; // vrai si un acteur , faux si realisateur
+	
+	 //constructeur
+		 public Artiste(String nom, String prenom, boolean estActeur) {
+			super();
+			this.nom = nom;
+			this.prenom = prenom;
+			this.estActeur = estActeur;
+		}
+	//getter et setter du nom de l'artiste
 	public String getNom() {
 		return nom;
 	}
-
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-
+	
+	//getter et setter du prenom de l'artiste
 	public String getPrenom() {
 		return prenom;
 	}
-
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-
-	public String getRole() {
-		return role;
+	//un getter pour voir si l'artiste est un realisateur
+	public boolean estRealisateur(){
+        return !estActeur;
+    }
+	
+	//getter et setter pour l'acteur 
+	public boolean getEstActeur() {
+		return estActeur;
 	}
-
-	public void setRole(String role) {
-		this.role = role;
+	public void setEstActeur(boolean estActeur) {
+		this.estActeur = estActeur;
 	}
-	     
-	 
 	@Override
-    public String toString() {
-        return prenom + " " + nom + " (" + role + ")";
+	public String toString() {
+		return  prenom + " " + nom + (estActeur ? "(Acteur)" : " (Realisateur)");
 	}
+
 	 
+	 
+	 
+
 	 
 }
