@@ -207,7 +207,7 @@ public interface InterUtilisateur {
    * Renvoie l'ensemble des films d'un certain genre.
    *
    * @param genre le genre du film
-   * @return l'ensemble des films du genre ou <code>null</code> si aucun film
+   * @return l'ensenble des films du genre ou <code>null</code> si aucun film
    *         n'a été trouvé
    */
   Set<Film> ensembleFilmsGenre(Genre genre);

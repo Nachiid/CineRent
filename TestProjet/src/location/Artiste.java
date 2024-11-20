@@ -12,6 +12,7 @@ public class Artiste {
 			super();
 			this.nom = nom;
 			this.prenom = prenom;
+			
 			this.estActeur = estActeur;
 		}
 	//getter et setter du nom de l'artiste

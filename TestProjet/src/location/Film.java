@@ -31,60 +31,36 @@ public class Film {
         this.evaluations = new HashSet<>();
     }
 
-    // Getters and Setters
-    public String getTitre() {
-        return titre;
-    }
+    // Getters and Settters
+    public String getTitre() {  return titre; }
 
-    public int getAnnee() {
-        return annee;
-    }
+    public int getAnnee() {    return annee; }
 
-    public Artiste getRealisateur() {
-        return realisateur;
-    }
+    public Artiste getRealisateur() {   return realisateur;  }
 
-    public Set<Artiste> getActeurs() {
-        return acteurs;
-    }
+    public Set<Artiste> getActeurs() {    return acteurs;  }
 
-    public Set<Genre> getGenres() {
-        return genres;
-    }
+    public Set<Genre> getGenres() {  return genres;  }
 
-    public int getAgeMinimum() {
-        return ageMinimum;
-    }
+    public int getAgeMinimum() {  return ageMinimum; }
 
-    public boolean isOuvertALocation() {
-        return ouvertALocation;
-    }
+    public boolean isOuvertALocation() {  return ouvertALocation; }
 
-    public void setOuvertALocation(boolean ouvertALocation) {
-        this.ouvertALocation = ouvertALocation;
-    }
+
+    public void setOuvertALocation(boolean ouvertALocation) {    this.ouvertALocation = ouvertALocation;  }
 
     // Ajouter un acteur 
-    public void addActeur(Artiste acteur) {
-        acteurs.add(acteur);
-    }
+    public void addActeur(Artiste acteur) {  acteurs.add(acteur); }
 
-    // Add a genr to the set
-    public void addGenre(Genre genre) {
-        genres.add(genre);
-    }
+    // Ajouter un genre  
+    public void addGenre(Genre genre) {  genres.add(genre); }
 
-    // Add an evaluation to th set
-    public void addEvaluation(Evaluation evaluation) {
-        evaluations.add(evaluation);
-    }
-
-    // Get all evaluations
-    public Set<Evaluation> getEvaluations() {
-        return evaluations;
-    }
-
-    // Calculate the average rating
+    // Ajouter une eval  
+    public void addEvaluation(Evaluation evaluation) {   evaluations.add(evaluation); }
+ 
+    // getter pour avoir toutes les eval 
+    public Set<Evaluation> getEvaluations() {     return evaluations; }
+    // Calcule la moyenne des evals 
     public double moyenneEvaluations() {
         return evaluations.stream().mapToInt(Evaluation::getNote).average().orElse(0.0);
     }
