@@ -1,6 +1,18 @@
 package location;
 
-// A COMPLETER
+/**
+ * Inscription d'un utilisateur. Le pseudo choisi ne doit pas déjà exister
+ * parmi les utilisateurs déjà inscrits.
+ *
+ * @param pseudo le pseudo (unique) de l'utilisateur
+ * @param mdp le mot de passe de l'utilisateur (ne pas doit pas être vide ou
+ *        <code>null</code>)
+ * @param info les informations personnelles sur l'utilisateur
+ * @return un code précisant le résultat de l'inscription : 0 si l'inscription
+ *         s'est bien déroulée, 1 si le pseudo était déjà utilisé, 2 si le
+ *         pseudo ou le mot de passe était vide, 3 si les informations
+ *         personnelles ne sont pas bien précisées
+ */
 
 public class Utilisateur {
 	private String pseudo;
