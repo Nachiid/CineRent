@@ -74,7 +74,7 @@ public class Film {
         genres.add(genre);
     }
 
-    // Add an evaluation to the set
+    // Add an evaluation to th set
     public void addEvaluation(Evaluation evaluation) {
         evaluations.add(evaluation);
     }
