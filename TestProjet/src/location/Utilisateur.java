@@ -1,5 +1,7 @@
 package location;
 
+import java.util.HashSet;
+import java.util.Set;
 // A COMPLETER
 
 public class Utilisateur {
