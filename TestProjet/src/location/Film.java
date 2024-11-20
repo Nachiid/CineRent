@@ -27,8 +27,7 @@ public class Film {
 		this.evaluations = evaluations;
 		this.isDisponible = isDisponible;
 	}
-	
-	
-	
+
+
 	
 }

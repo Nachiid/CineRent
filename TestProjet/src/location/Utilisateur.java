@@ -1,5 +1,8 @@
 package location;
 
+import java.util.HashSet;
+import java.util.Set;
+// A COMPLETER
 /**
  * Inscription d'un utilisateur. Le pseudo choisi ne doit pas déjà exister
  * parmi les utilisateurs déjà inscrits.
@@ -13,6 +16,7 @@ package location;
  *         pseudo ou le mot de passe était vide, 3 si les informations
  *         personnelles ne sont pas bien précisées
  */
+
 
 public class Utilisateur {
 	private String pseudo;
