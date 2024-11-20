@@ -69,7 +69,7 @@ public class Film {
         acteurs.add(acteur);
     }
 
-    // Add a genre to the set
+    // Add a genr to the set
     public void addGenre(Genre genre) {
         genres.add(genre);
     }

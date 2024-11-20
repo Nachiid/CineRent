@@ -7,7 +7,7 @@ public class Artiste {
 	 private String prenom;
 	 private boolean estActeur; // vrai si un acteur , faux si realisateur
 	
-	 //constrructeur
+	 //constructeur
 		 public Artiste(String nom, String prenom, boolean estActeur) {
 			super();
 			this.nom = nom;
@@ -29,7 +29,7 @@ public class Artiste {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	//un getter pour voir si l'artiste est un realisateur
+	//un getter pour voiir si l'artiste est un realisateur
 	public boolean estRealisateur(){
         return !estActeur;
     }
