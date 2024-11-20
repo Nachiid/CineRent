@@ -1,10 +1,5 @@
 package location;
 
-<<<<<<< HEAD
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-=======
 
 
 import java.util.HashSet;
@@ -13,7 +8,6 @@ import java.util.HashMap;
 
 import java.util.Map;
 
->>>>>>> bc8cb16cb78161edd690d3a76182a09a2a5ebf55
 import java.util.Set;
 
 
@@ -28,36 +22,6 @@ import java.util.Set;
 
  */
 
-<<<<<<< HEAD
-
-public class Utilisateur {
-	private String pseudo;
-	private String nom; 
-	private String prenom;
-	private int age;
-	private String adresse;
-	private String motDePasse;
-	private Set<Film> filmsEnLocation;
-	
-	 static final int nbrMAXRes= 3;
-	  int nbrRes=0;
-
-	
-	public Utilisateur(String pseudo, String nom, String prenom, int age, String adresse, String motDePasse) {
-		super();
-		this.pseudo = pseudo;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.age = age;
-		this.adresse = adresse;
-		this.motDePasse = motDePasse;
-		this.filmsEnLocation = new HashSet<>();
-	}
-	
-	public String getPseudo() {
-		return pseudo;
-	}
-=======
 public class Utilisateur implements InterUtilisateur {
 
 
@@ -69,7 +33,6 @@ public class Utilisateur implements InterUtilisateur {
      */
 
     private String pseudo;
->>>>>>> bc8cb16cb78161edd690d3a76182a09a2a5ebf55
 
 
 
@@ -237,71 +200,6 @@ public class Utilisateur implements InterUtilisateur {
 
 
 
-<<<<<<< HEAD
-	public void reserverFilm(Film film) throws Exception {
-	    /* Vérifie si l'utilisateur est connecté*/
-	    if (this.pseudo == null || this.pseudo.isEmpty()) {
-	        throw new Exception("Utilisateur non connecté.");
-	    }
-
-	    // Vérifie l'âge de l'utilisateur par rapport à l'âge requis pour le film
-	    if (this.age < film.getAgeMinimum()) {
-	        throw new LocationException("Âge insuffisant pour louer ce film.");
-	    }
-
-	    // Vérifie si l'utilisateur a atteint le nombre maximum de films en location
-	    if (this.filmsEnLocation.size() >= nbrMAXRes) {
-	        throw new LocationException("Nombre maximum de films en location atteint.");
-	    }
-
-	    // Vérifie si le film est disponible à la location
-	    if (!film.isOuvertALocation()) {
-	        throw new LocationException("Le film '" + film.getTitre() + "' n'est pas disponible à la location.");
-	    }
-
-	    // Ajoute le film à la liste des films en location
-	    this.filmsEnLocation.add(film);
-
-	    // Indique que le film est loué
-	    film.setOuvertALocation(false);
-
-	    System.out.println("Le film '" + film.getTitre() + "' a été loué avec succès par " + this.pseudo);
-	}
-	
-	public void annulerReservation(Film film) throws LocationException {
-	    // Vérifie si le film est dans la liste des films en location
-	    if (!this.filmsEnLocation.contains(film)) {
-	        throw new LocationException("Le film '" + film.getTitre() + "' n'est pas dans votre liste de films en location.");
-	    }
-
-	    // Supprime le film de la liste des films en location
-	    this.filmsEnLocation.remove(film);
-
-	    // Marque le film comme disponible à nouveau
-	    film.setOuvertALocation(true);
-
-	    System.out.println("La location du film '" + film.getTitre() + "' a été annulée avec succès par " + this.pseudo);
-	}
-
-	
-
-	public List<Film> getFilmsReserves() throws Exception {
-	    // Vérifie si l'utilisateur est connecté
-	    if (this.pseudo == null || this.pseudo.isEmpty()) {
-	        throw new Exception("Aucun utilisateur n'est actuellement connecté.");
-	    }
-
-	    // Retourne une liste contenant les films en location
-	    return new ArrayList<>(this.filmsEnLocation);
-	}
-	
-}
-
-
-
-
-
-=======
     /**
 
      * Modifie le mot de passe de l'utilisateur.
@@ -479,4 +377,3 @@ public class Utilisateur implements InterUtilisateur {
     }
 
 }
->>>>>>> bc8cb16cb78161edd690d3a76182a09a2a5ebf55

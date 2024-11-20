@@ -8,7 +8,11 @@ package location;
  */
 public class NonConnecteException extends Exception {
 
-  /**
+  public NonConnecteException(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+/**
    * Identifiant de sérialisation.
    */
   private static final long serialVersionUID = -2876441299971092712L;

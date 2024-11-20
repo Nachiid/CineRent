@@ -5,14 +5,15 @@ package location;
 public class Artiste {
 	 private String nom;
 	 private String prenom;
+	 private String nationalite;
 	 private boolean estActeur; // vrai si un acteur , faux si realisateur
 	
 	 //constructeur
-		 public Artiste(String nom, String prenom, boolean estActeur) {
+		 public Artiste(String nom, String prenom,String nationalite, boolean estActeur) {
 			super();
 			this.nom = nom;
 			this.prenom = prenom;
-			
+			this.nationalite = nationalite;
 			this.estActeur = estActeur;
 		}
 	//getter et setter du nom de l'artiste
