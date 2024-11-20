@@ -1,5 +1,6 @@
 package location;
 
+import java.util.Set;
 // A COMPLETER
 
 public class Film {
@@ -25,8 +26,7 @@ public class Film {
 		this.evaluations = evaluations;
 		this.isDisponible = isDisponible;
 	}
-	
-	
-	
+
+
 	
 }
