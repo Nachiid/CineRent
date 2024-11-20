@@ -18,6 +18,7 @@ public class Evaluation {
     public void setPseudoUtilisateur(String pseudoUtilisateur) { this.pseudoUtilisateur = pseudoUtilisateur; }
     
     public int getNote() { return note; }
+    
     public void setNote(int note) {
         if (note >= 0 && note <= 5) {
             this.note = note;
