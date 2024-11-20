@@ -30,7 +30,7 @@ public class Utilisateur {
 	
 	public Utilisateur(String pseudo, String nom, String prenom, int age, String adresse, String motDePasse) {
 		super();
-		this.pseudoo = pseudo;
+		this.pseudo = pseudo;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.age = age;
