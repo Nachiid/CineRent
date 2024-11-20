@@ -31,7 +31,7 @@ public class Film {
         this.evaluations = new HashSet<>();
     }
 
-    // Getters and Setters
+    // Getters and Settters
     public String getTitre() {  return titre; }
 
     public int getAnnee() {    return annee; }
