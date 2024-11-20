@@ -12,6 +12,7 @@ public class Artiste {
 			super();
 			this.nom = nom;
 			this.prenom = prenom;
+			
 			this.estActeur = estActeur;
 		}
 	//getter et setter du nom de l'artiste
@@ -29,7 +30,7 @@ public class Artiste {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	//un getter pour voiir si l'artiste est un realisateur
+	//un getter pour voir si l'artiste est un realisateur
 	public boolean estRealisateur(){
         return !estActeur;
     }
