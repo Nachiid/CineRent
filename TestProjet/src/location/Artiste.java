@@ -31,7 +31,7 @@ public class Artiste {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	//un getter pour voiir si l'artiste est un realisateur
+	//un getter pour voir si l'artiste est un realisateur
 	public boolean estRealisateur(){
         return !estActeur;
     }
@@ -43,14 +43,18 @@ public class Artiste {
 	public void setEstActeur(boolean estActeur) {
 		this.estActeur = estActeur;
 	}
+	
+	// AJOUT AYMAN - Getter pour la nationalité
+	public String getNationalite() {
+	    return nationalite;
+	}
+	
+	
+
+	
 	@Override
 	public String toString() {
 		return  prenom + " " + nom + (estActeur ? "(Acteur)" : " (Realisateur)");
 	}
-
-	 
-	 
-	 
-
 	 
 }

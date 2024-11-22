@@ -14,6 +14,7 @@ public class Film {
     private int annee;
     private int ageMinimum;
     private char etat;//'o' pour ouvert et 'F' pour fermé 
+    //AYMAN - type enume
     private Artiste realisateur;
     private Set<Artiste> acteurs;
     private Set<Genre> genres; 
