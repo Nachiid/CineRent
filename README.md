@@ -50,3 +50,6 @@ Pour exécuter les tests unitaires, vous pouvez utiliser votre IDE (comme Intell
 
 ## Auteurs
 - **Auteurs** : NACHID AYMAN - OUMAIMA AYAD - AHLAM ZEROIL - LYNA AKBAL
+
+Copyright © 2024 [NACHID]. All rights reserved.
+Permission to view this code is granted, but modification or redistribution is prohibited.
