@@ -1,5 +1,7 @@
 # Projet de Location de Films
 
+## **Etat : Non-finis**
+
 Ce projet est un système de gestion de location de films. Il permet de gérer des films, leurs acteurs, réalisateurs, genres, et des évaluations laissées par les utilisateurs.
 
 ## Description
