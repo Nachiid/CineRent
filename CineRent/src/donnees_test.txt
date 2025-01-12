@@ -1,0 +1,8 @@
+# Artistes
+Nachid,ayman,Américain,true
+Spielberg,Steven,Américain,true
+Nolan,Christopher,Britannique,true
+realisateur,Laila,Américain,true
+# Films
+Inception,2010,13,Nolan,Christopher,false
+acteur:Nolan,Christopher

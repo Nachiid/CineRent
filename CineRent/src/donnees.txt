@@ -1,0 +1,5 @@
+# Artistes
+nachid,leonardo,marocain,true
+nachid,ayman,marocain,true
+# Films
+purg,1945,11,nachid,leila,true
